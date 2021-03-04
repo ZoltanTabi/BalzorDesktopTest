@@ -14,6 +14,10 @@ namespace BlazorDesktop.Data
         public Task<WeatherForecast[]> GetForecastAsync(DateTime startDate)
         {
             var rng = new Random();
+		
+		var nulla = 0;
+		var i = 2/nulla;
+
             return Task.FromResult(Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = startDate.AddDays(index),
